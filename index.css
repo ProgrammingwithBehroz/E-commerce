@@ -1,0 +1,344 @@
+
+.logo{
+    width: 5%;
+    height: 5%;
+    border-radius: 4px;
+}
+
+/* .card-img-top{
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    
+} */
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+/* تنظیمات پایه */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary: #6A0572;  /* بنفش تیره */
+    --secondary: #F8A1D1; /* صورتی کم‌رنگ */
+    --text-color: #fff;
+    --background: #FAE1F3; /* صورتی ملایم */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+/* هدر */
+.header {
+    background: var(--primary);
+    padding: 15px 0;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* نوار بالا */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: var(--secondary);
+    color: var(--primary);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav2{
+    background: var(--background);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: var(--text-color);
+}
+
+/* کارت‌های محصولات */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: var(--primary);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.qty {
+    width: 60px !important;  /* عرض مناسب */
+    height: 35px !important;  /* ارتفاع مناسب */
+    font-size: 16px; /* متن واضح‌تر */
+    text-align: center; /* وسط‌چین کردن عدد */
+    border: 2px solid #6A0572; /* رنگ بنفش برای فریم */
+    border-radius: 6px; /* گرد شدن گوشه‌ها */
+    outline: none;
+    padding: 5px;
+}
+
+/* جلوگیری از مخفی شدن input */
+.d-flex {
+    align-items: center; 
+    gap: 10px;  /* فاصله مناسب بین input و دکمه */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--primary);
+}
+
+.card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+/* دکمه‌ها */
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--text-color);
+    padding: 7px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #500356;
+}
+
+/* منوی کناری */
+.sidebar {
+    width: 250px;
+    background: var(--primary);
+    color: var(--text-color);
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+
+.sidebartitle{
+    background: var(--secondary);
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.567);
+}
+
+.sidebar .active{
+    background: #d09dd4;
+}
+
+/* استایل فرم جستجو */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hghg{
+    margin-right: 20%;
+}
+
+.card-img-top{
+    background: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: var(--primary);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 50%;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 5px 6px;
+    background: var(--secondary);
+    color: var(--primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #E890C4;
+}
+
+/* 🔹 استایل جدید Navbar سمت راست */
+.sidebar {
+    width: 260px;
+    background: var(--primary);
+    color: var(--text-color);
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 5px 0;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+table {
+    width: 80%; /* عرض مناسب‌تر برای هماهنگی */
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* سایه برای زیبایی */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* خط جداکننده */
+}
+
+th {
+    background-color: #d63384; /* هدر با رنگ بنفش هماهنگ */
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #fce4ec; /* رنگ روشن هنگام هاور */
+}
+
+.product_img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px; /* تصویر محصول گوشه‌های گرد */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a:hover {
+    background: var(--secondary);
+    color: var(--primary);
+    transform: translateX(-5px);
+}
+
+/* 🔹 استایل فوتر */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background: #6A0572;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.footer a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
